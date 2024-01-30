@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.15)
+
+project(AML_Test)
+
+# Create an executable with the name of the project
+add_executable(${PROJECT_NAME} main.cpp)
+
+# Link the ${PROJECT_NAME} target with the AML library
+target_link_libraries(${PROJECT_NAME} AML)
+
+# Install the target executable to the binary directory
+install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_BINARY_DIR}/bin)

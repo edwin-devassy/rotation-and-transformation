@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.15)
+
+# This CMakeLists.txt file is used to build the Attitude Math Library (AML) project.
+# The project is named AML and will be used to generate build files for the library.
+project(AML)
+
+# FILEPATH: /d:/GitHub/rotation-and-transformation/AttitudeMathLib/AML/CmakeLists.txt
+
+# Set C++ flags to enable C++17 standard and enable warnings as errors
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wall -Werror")
+
+# Set the source files for AttitudeMathLib
+set(SRC_CPP_AML)
+
+# Add documentation comment for the library
+add_library(${PROJECT_NAME} STATIC ${SRC_CPP_AML})
+
+# Include the project source directory in the target's include directories
+target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR})
