@@ -10,7 +10,9 @@ project(AML)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wall -Werror")
 
 # Set the source files for AttitudeMathLib
-set(SRC_CPP_AML)
+set(SRC_CPP_AML
+    AMLVector3.cpp
+)
 
 # Add documentation comment for the library
 add_library(${PROJECT_NAME} STATIC ${SRC_CPP_AML})
