@@ -13,7 +13,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(Catch2)
 
 # Create an executable with the name of the project
-add_executable(${PROJECT_NAME} main.cpp AMLVector3Test.cpp)
+add_executable(${PROJECT_NAME} main.cpp AMLVector3Test.cpp AMLMatrix33Test.cpp)
 
 # target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/catch)
 
